@@ -1,0 +1,71 @@
+*:root{
+    --texto:'Inter', sans-serif;
+    --título:'Poppins', sans-serif;
+    --primeiro: #051c3f;
+    --segundo:#eebe35;
+    --terceiro: #312793;
+    --quarto: #ffffff;
+    --quito: #ffd33c;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+ display:flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 60px;
+ background: var(--primeiro);
+position:relative;
+
+}
+.menu{
+    display:flex;
+    gap: 40px;
+    list-style: none;
+   
+}
+.menu li{
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+    color:white;
+font-weight: 600;
+display: block;
+padding: 20px 0;
+}
+.submenu{
+    position: absolute;
+    top:100%;
+    left: 0;
+    background: #04224e;
+    width: 220px;
+    list-style: none;
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: .0,3s;
+}
+.submenu li a{
+    padding: 15px 20px;
+    color:#ffffff;
+}
+.submenu li a:hover{
+    background: #062f6e;
+}
+.dropdown:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.dropdown > a::after{
+    content: "▼";
+    font-size: 10px;
+    margin-left: 8px;
+}
+.logo img{
+
+}
