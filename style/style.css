@@ -923,8 +923,7 @@ text-indent: 25px;
 }
     .equipe-card {
         width: 100%;
-        max-width: 180px;
-        margin: 0 auto;
+        max-width: 100%;
     }
     .cc-equipe {
         padding: 60px 25px;
