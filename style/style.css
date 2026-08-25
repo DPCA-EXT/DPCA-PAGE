@@ -916,15 +916,15 @@ text-indent: 25px;
     }
     #equipe {
         padding: 60px 25px;
-   .equipe-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
+  .equipe-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
 }
 
 .equipe-card {
-    width: 100% !important;
-    max-width: none !important;
+    width: 280px;
+    max-width: 100%;
 }
     .cc-equipe {
         padding: 60px 25px;
