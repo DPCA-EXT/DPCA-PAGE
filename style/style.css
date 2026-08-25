@@ -825,7 +825,7 @@ text-indent: 25px;
 
 
 /* celular */
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .navbar {
         padding: 15px 20px;
     }
