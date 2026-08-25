@@ -825,7 +825,7 @@ text-indent: 25px;
 
 
 /* celular */
-@media (max-width: 980px) {
+@media (max-width: 780px) {
     .navbar {
         padding: 15px 20px;
     }
@@ -916,15 +916,16 @@ text-indent: 25px;
     }
     #equipe {
         padding: 60px 25px;
-    }
-    .equipe-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+   .equipe-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
 }
-    .equipe-card {
-        width: 100%;
-        max-width: 100%;
-    }
+
+.equipe-card {
+    width: 100% !important;
+    max-width: none !important;
+}
     .cc-equipe {
         padding: 60px 25px;
     }
@@ -949,4 +950,4 @@ text-indent: 25px;
         text-align: center;
         padding: 20px 25px;
     }
-}
+}}
