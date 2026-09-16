@@ -67,7 +67,6 @@ font-family: var(--texto);
     transform: translateY(0);
 }
 .dropdown > a::after{
-    content: "▼";
     font-size: 10px;
     margin-left: 8px;
 }
@@ -80,7 +79,7 @@ footer{
 #hero{
     position: relative;
     height: 90vh;
-   background-image: url("../imagens/hero.png");
+   background-image: url("../imagens/hero.jpg");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -602,6 +601,130 @@ text-indent: 25px;
     text-align: center;
 }
 
+/* galeria */
+
+.galeria-intro {
+    padding: 80px 80px 50px;
+    text-align: center;
+    background:var(--sexto);
+}
+
+.galeria-intro h1 {
+    font-family: var(--título);
+    font-size: 2.8rem;
+    color: var(--primeiro);
+    margin-bottom: 20px;
+}
+
+.galeria-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: var(--texto);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.galeria-secao {
+    padding: 50px 80px 80px;
+}
+
+.galeria-secao h2 {
+    font-family: var(--título);
+    font-size: 2rem;
+    color: var(--primeiro);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--segundo);
+    padding-left: 15px;
+}
+
+.galeria-ano {
+    margin-bottom: 60px;
+}
+
+.galeria-ano h3 {
+    font-family: var(--título);
+    font-size: 1.6rem;
+    color: var(--terceiro);
+    margin-bottom: 20px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.03);
+}
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carrossel {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrossel img {
+    flex: 0 0 285px;
+    width: 285px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.seta {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primeiro);
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+}
+.seta:hover {
+    background: var(--terceiro);
+}
+.ver-mais {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: var(--segundo);
+    color: var(--primeiro);
+    font-family: var(--texto);
+    font-weight: 600;
+    cursor: pointer;
+    
+    
+}
+.foto-extra {
+    display: none;
+}
+
 /* footer */
 .footer {
     background: var(--primeiro);
@@ -708,246 +831,192 @@ text-indent: 25px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* celular */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-    }
-    .logo img {
-        width: 120px;
-    }
-    .menu {
-        gap: 15px;
-    }
-    #hero {
-        min-height: 100vh;
-        height: auto;
-        padding: 100px 25px 60px;
-        background-position: center;
-    }
-    .hero-texto {
-        max-width: 100%;
-    }
-    .hero-texto h1 {
-        font-size: 2.5rem;
-        line-height: 1.15;
-    }
-    .hero-texto p {
-        padding-left: 0;
-        font-size: 1rem;
-    }
-    .botoes {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 30px;
-    }
-    .bnt-principal,
-    .bnt-secundario {
-        width: 100%;
-    }
-    #ca {
-        padding: 60px 25px;
-    }
-    .ca-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-    .ca-texto h2 {
-        font-size: 2.2rem;
-    }
-    .ca-texto p {
-        font-size: 1rem;
-    }
-    .ca-imagem img {
-        width: 280px;
-    }
-    #areas {
-        padding: 60px 25px;
-    }
-    .area-texto h2 {
-        font-size: 2.2rem;
-    }
-    .grid-cards {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    #profissao {
-        padding: 60px 25px;
-    }
-    .prof-texto h2 {
-        font-size: 2.2rem;
-    }
-    .prof-texto p {
-        font-size: 1rem;
-    }
-    #dpca {
-        padding: 60px 25px;
-    }
-    .dpca-texto h2 {
-        font-size: 2.2rem;
-    }
-    .dpca-texto p {
-        font-size: 1rem;
-    }
-    #projeto {
-        padding: 60px 25px;
-    }
-    .projeto-texto h1 {
-        font-size: 2.2rem;
-    }
-    .projeto-texto h2 {
-        font-size: 1.7rem;
-    }
-    #equipe {
-        padding: 60px 25px;
-  .equipe-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    justify-items: center;
+/* =========================
+   PAINEL DE FOTOS
+========================= */
+
+.painel-fotos {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 13, 29, 0.85);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
 }
 
-.equipe-card {
-    width: 280px;
-    max-width: 100%;
+.painel-fotos.aberto {
+    display: flex;
 }
-    .cc-equipe {
-        padding: 60px 25px;
-    }
 
-    .grupo-grid {
-        flex-direction: column;
-        align-items: center;
-    }
+.painel-conteudo {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 80vh;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    overflow-y: auto;
+}
 
-    .grupo-card {
-        width: 280px;
-        max-width: 100%;
-    }
-    .footer-conteudo {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        padding: 50px 25px;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        padding: 20px 25px;
-    }
-}}
+.painel-conteudo h3 {
+    font-family: var(--título);
+    color: var(--primeiro);
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.fechar-painel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--primeiro);
+    color: white;
+
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.fechar-painel:hover {
+    background: var(--terceiro);
+}
+
+.fotos-extras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.fotos-extras img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.painel-fotos.aberto {
+    display: flex;
+}
+
+
+/* =========================
+   VISUALIZADOR DE FOTO
+========================= */
+
+.visualizador {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+
+    background: rgba(2, 13, 29, 0.95);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.visualizador.aberto {
+    display: flex;
+}
+
+#foto-grande {
+    max-width: 90%;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+.fechar-visualizador {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--primeiro);
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.fechar-visualizador:hover {
+    background: var(--terceiro);
+}
+
+.seta-foto {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--primeiro);
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.seta-foto:hover {
+    background: var(--terceiro);
+}
+
+.esquerda-foto {
+    left: 30px;
+}
+
+.direita-foto {
+    right: 30px;
+}
+
+nav ul li a::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+
+    width: 35px;
+    height: 3px;
+
+    background: var(--segundo);
+    border-radius: 10px;
+
+    transform: translateX(-50%) scaleX(0);
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+
+
